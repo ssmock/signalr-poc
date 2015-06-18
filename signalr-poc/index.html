@@ -3,6 +3,15 @@
 <head>
     <title></title>
     <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        #fileUpdate {
+            color: #aaa;
+            font-style: italic;
+        }
+
         #messageList > div {
             border-bottom: 1px solid #eee;
         }
@@ -34,6 +43,9 @@
         </table>
     </div>
     <hr />
+    <div id="fileUpdate"></div>
+    <pre id="fileArea"></pre>
+    <hr />
     <form id="message" action="">
         <input id="messageIn" type="text" value="" />
         <input type="submit" />
@@ -45,6 +57,7 @@
     <!-- Auto-generated SignalR hub script -->
     <script src="/signalr/hubs"></script>
     <script src="StockTicker.js"></script>
+    <script src="File.js"></script>
     <script src="Chat.js"></script>
 </body>
 </html>

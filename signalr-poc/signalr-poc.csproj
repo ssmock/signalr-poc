@@ -87,7 +87,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="Chat.js" />
+    <Content Include="File.js" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
@@ -96,11 +98,16 @@
     <Content Include="Scripts\jquery.signalR-2.2.0.js" />
     <Content Include="Scripts\jquery.signalR-2.2.0.min.js" />
     <Content Include="StockTicker.js" />
+    <Content Include="test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chat\ChatHub.cs" />
     <Compile Include="Chat\Message.cs" />
+    <Compile Include="File\FileChecker.cs" />
+    <Compile Include="File\FileViewerHub.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="StockTicker\Stock.cs" />
