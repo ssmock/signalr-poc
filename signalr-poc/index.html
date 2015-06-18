@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #messageList > div {
+            border-bottom: 1px solid #eee;
+        }
+
+            #messageList > div > div {
+                display: inline-block;
+                vertical-align: top;
+            }
+
+                #messageList > div > div:first-child {
+                    width: 160px;
+                    color: #888;
+                }
+
+            #messageList > div:nth-child(even) {
+                background-color: #f8f8f8;
+            }
+    </style>
+</head>
+<body>
+    <div id="stockTable">
+        <table border="1">
+            <thead>
+                <tr><th>Symbol</th><th>Price</th><th>Open</th><th>Change</th><th>%</th></tr>
+            </thead>
+            <tbody>
+                <tr class="loading"><td colspan="5">loading...</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <hr />
+    <form id="message" action="">
+        <input id="messageIn" type="text" value="" />
+        <input type="submit" />
+    </form>
+    <div id="messageList">
+    </div>
+    <script src="/Scripts/jquery-1.6.4.js"></script>
+    <script src="/Scripts/jquery.signalR-2.2.0.js"></script>
+    <!-- Auto-generated SignalR hub script -->
+    <script src="/signalr/hubs"></script>
+    <script src="StockTicker.js"></script>
+    <script src="Chat.js"></script>
+</body>
+</html>
